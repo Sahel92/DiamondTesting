@@ -1,5 +1,7 @@
 .header-container {
-  flex-flow: column wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: #1f2937;
 }
 
@@ -10,11 +12,21 @@
 }
 
 .hero-second, .header-links{
-  font: 18px;
+  font-size: 18px;
   color: #E5E7EB;
 }
 
 .logo{
-  font: 24px;
   color: #F9FAF8;
+  font-size: 24px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links{
+  display: flex;
+  justify-content: space-between;
 }
