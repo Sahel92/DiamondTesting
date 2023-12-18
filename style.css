@@ -105,6 +105,9 @@ color: #1f2937;
 .image{
   height: 100px;
   width: 100px;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .info{
@@ -113,4 +116,27 @@ color: #1f2937;
 
 p{
   margin: 0;
+}
+
+.quote-container{
+  background-color: #E5E7EB;
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex : 1;
+}
+
+.quote{
+font-size: 36px;
+font-style: italic;
+color: #1f2937;
+}
+
+.quote-source{
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: 25px;
+  font-style: normal;
+
 }
