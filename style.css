@@ -151,6 +151,7 @@ p {
   border-color: white;
   justify-self: flex-end;
   width: 150px;
+  border-width: 4px;
 }
 
 .action {
@@ -181,13 +182,12 @@ p {
   font-size: 15px;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: center;
 }
 
-.footer{
+.footer {
   color: white;
   padding: 50px
 }
-
