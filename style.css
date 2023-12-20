@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .header-container {
@@ -25,7 +26,7 @@ body {
 }
 
 .hero-second,
-.header-links {
+.projects {
   font-size: 18px;
   color: #E5E7EB;
 }
@@ -36,7 +37,7 @@ body {
   max-width: 300px;
 }
 
-.logo {
+.name {
   color: #F9FAF8;
   font-size: 24px;
   padding: 10px;
@@ -47,13 +48,15 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.header-links {
+.projects {
   display: flex;
   margin-top: 14px;
   margin-bottom: 0px;
-  gap: 25px;
+  gap: 15px;
   list-style: none;
 }
 
@@ -137,6 +140,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
+  justify-content: center;
 }
 
 .quote {
@@ -185,7 +189,7 @@ p {
 }
 
 .action-subtext {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .footer-container {
