@@ -7,13 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My First Landing Page</title>
         <link rel="stylesheet" href="style.css">
+        <script src="landing.js"></script>
     </head>
 
     <body>
         <!--header section -->
-        <div class="header-container">
+        <div class="header-container"  id = "top">
             <header class="header">
                 <div class="name">Sahel S.</div>
+
                 <ul class="projects">
                     <li>
                         <a
@@ -42,13 +44,14 @@
                         quality through automated testing. Experienced in
                         Java, Selenium WebDriver, JUnit, TestNG, API Testing,
                         and more.</h3>
-                    <button class="sign-up">
+                    <button class="sign-up" onclick="scrollToSkills()">
                         Skills
                     </button>
                     <!--This button will re-direct to a skills section-->
                 </div>
                 <div class="placeholder">
-                    This is a placeholder for an image
+                    <img src="images\CucumberReport.png"
+                        alt="my cucumber test results after text execution">
                 </div>
             </div>
         </div>
@@ -103,6 +106,31 @@
                 </div>
             </div>
         </div>
+        <div id="skills-section" class="skills-container">
+            <h2 class="skills-header">Technical Skills</h2>
+            <div class="skills-list">
+                <h3>Testing Tools:</h3>
+                <p>Selenium WebDriver, Postman</p>
+
+                <h3>Languages:</h3>
+                <p>Java, SQL, C#, JavaScript</p>
+
+                <h3>Test Framework:</h3>
+                <p>Cucumber, TestNG, JUnit, Karate</p>
+
+                <h3>Web Technologies:</h3>
+                <p>HTML, XML, CSS</p>
+
+                <h3>Build Tool:</h3>
+                <p>Maven</p>
+
+                <h3>CI/CD Tool</h3>
+                <p>Jenkins</p>
+                <h3>IDE:</h3>
+                <p>Eclipse, InelliJ, MySQL Workbench</p>
+
+            </div>
+        </div>
         <!--quote section-->
         <div class="quote-container">
             <div class="quote"> "Quality is not an act, it is a habit."
@@ -120,7 +148,8 @@
                         Reach out for exciting opportunities!
                     </div>
                 </div>
-                <button class="action-button">Contact Me</button>
+                <button class="action-button" onclick="showContactModal()">Contact
+                    Me</button>
                 <!-- this button will re-direct to my contact information-->
             </div>
         </div>
@@ -130,6 +159,14 @@
                 Copyright © Sahel S.
             </div>
         </div>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top-button">Back to Top</a>
+        </div>
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeContactModal()">&times;</span>
+                <p class="email">Email: sahel.automation.engineer@gmail.com</p>
+            </div>
+        </div>
     </body>
-
 </html>
